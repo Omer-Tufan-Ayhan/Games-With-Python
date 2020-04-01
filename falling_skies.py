@@ -128,5 +128,12 @@ while True:
             lives -= 1
             pen.clear()
             pen.write("Score: {}  Lives: {}".format(score, lives), align="center", font=font)
+            
+        if lives < 1 :
+            player.hideturtle()
+            bad_guy.hideturle()
+            good_guy.hideturtle()
+            print("GAME OVER")
+            break
 
 wn.mainloop()    
